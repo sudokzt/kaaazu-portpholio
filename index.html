@@ -14,16 +14,95 @@
   </head>
   <body>
     <section class="header">
-      <p class="site__title-sub">KaAaZU's PortPholio</p>
-      <h1 class="site__title">HI, MY NAME IS KAZUTO</h1>
-      <p class="site__description">Check out some of my works.</p>
+      <p class="site__title-sub">
+        KaAaZU's
+        <img
+          class="image"
+          src="images/FB_MyPhoto.jpg"
+          alt="自分の写真"
+          width="150px"
+          height="150px"
+          ontouchstart=""
+        />
+        PortPholio
+      </p>
+
+      <h1 class="site__title">Hi, MY NAME IS KAZUTO</h1>
+      <p class="site__description">Please know about me.</p>
       <div class="buttons">
-        <a href="#about" class="buttons__button">LEARN MORE</a>
-        <a href="#contact" class="buttons__button header_showy">SEND MESSAGE</a>
+        <a href="#about" class="buttons__button">KNOW MORE</a>
+        <a href="#contact" class="buttons__button button_showy">SEND MESSAGE</a>
       </div>
     </section>
-    <section class="about" id="about"></section>
-    <section class="works"></section>
+    <section class="about" id="about">
+      <h2 class="headding">ABOUT ME</h2>
+      <p class="about__text">
+        はじめまして。大阪の大学に通っているカーーズといいます。<br />
+        中学3年生の頃にアノニマスに憧れて、プログラミングを始めました。<br />
+        現在は、大阪の大学で経営学を勉強しながら、IT技術の習得にも勤しんでいます。
+      </p>
+      <p class="about__text">
+        このサイトは、私が今までやってきたことを記録したポートフォリオサイトです。<br />
+        様々な人に私がどのような人物なのかを知って欲しいと思っています。
+      </p>
+    </section>
+    <section class="works">
+      <h2 class="headding">WORKS</h2>
+      <div class="works-wrapper">
+        <div class="work-box unity">
+          <img src="images/unity.png" alt="Unityゲーム" class="work-image" />
+          <div class="work-description">
+            <div class="work-description__inner">
+              <p class="work-description__text">
+                <b>3Dゲーム</b><br />
+                5つのステージを走り、タイムを競うゲーム<br />
+                使用ツール: Unity, C#<br />
+                <a href="#" class="works__button button_ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box shigt">
+          <img src="images/shift.png" alt="シフト管理" class="work-image" />
+          <div class="work-description">
+            <div class="work-description__inner">
+              <p class="work-description__text">
+                <b>シフト管理アプリ</b><br />
+                シフトの確認や出欠勤の連絡が出来るアプリ<br />
+                使用ツール: Applican, GAS, JS<br />
+                <a href="#" class="works__button button_ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box beyond">
+          <img src="images/beyond.png" alt="質問投稿" class="work-image" />
+          <div class="work-description">
+            <div class="work-description__inner">
+              <p class="work-description__text">
+                <b>拡散型質問投稿アプリ</b><br />
+                最も適している人物に回答を促すアプリ<br />
+                使用ツール: Expo, PHP, ReactNative<br />
+                <a href="#" class="works__button button_ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box todo">
+          <img src="images/todo.jpg" alt="TwitterToDo" class="work-image" />
+          <div class="work-description">
+            <div class="work-description__inner">
+              <p class="work-description__text">
+                <b>TwitterToDoサイト</b><br />
+                毎日のタスクがtweetされるTodoサイト<br />
+                使用ツール: Heroku, firebase, React<br />
+                <a href="#" class="works__button button_ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="skills"></section>
     <section class="contact" id="contact"></section>
     <section class="footer"></section>

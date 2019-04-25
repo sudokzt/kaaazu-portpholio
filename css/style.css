@@ -20,6 +20,21 @@ body {
   font-family: "Raleway, Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+.past-portpholio {
+  text-align: left;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.past-portpholio a {
+  text-decoration: none;
+}
+.past-portpholio a:visited {
+  color: #fff;
+}
+.past-portpholio a:hover {
+  opacity: 0.6;
+}
+
 .profile-image {
   display: inline-block;
   width: 150px;
@@ -28,7 +43,7 @@ body {
   vertical-align: middle;
 }
 .header {
-  padding: 100px 30px 80px;
+  padding: 80px 30px 80px;
 }
 .site__title-sub {
   margin: 0 0 30px;

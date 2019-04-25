@@ -20,9 +20,11 @@ body {
   font-family: "Raleway, Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-.image {
+.profile-image {
+  display: inline-block;
+  width: 150px;
   border-radius: 50%;
-  margin: 0 2rem 60px;
+  margin: 30px;
   vertical-align: middle;
 }
 .header {
@@ -226,6 +228,33 @@ body {
 }
 .skill__text {
   margin: 0 20px;
+  line-height: 2;
+}
+#skills__dialog-open,
+#skills__dialog-close {
+  background-color: #fff;
+  outline: none;
+  margin: 50px 0 0;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  border: #f1b400 4px solid;
+  letter-spacing: 1px;
+  font-size: 100%;
+}
+#skills__dialog-close {
+  border: 4px solid;
+  vertical-align: middle;
+}
+#skills__dialog-open:hover,
+#skills__dialog-close:hover {
+  opacity: 0.4;
+}
+.skills__dialog__text {
+  display: block;
+  margin: 10px 0 0;
+  text-align: left;
+  font-size: 1.4rem;
   line-height: 2;
 }
 

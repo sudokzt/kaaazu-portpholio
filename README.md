@@ -1,4 +1,5 @@
-# PortPholio (New)
+# [新ポートフォリオへ](https://sudokzt.github.io/kaaazu-portpholio/)
+
 前のportPholioがダサかったので、変えます。<br>
 ただ変えるだけだったら、何にもならないのでcss設計を意識しながらコードを書いていきます。
 

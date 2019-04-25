@@ -8,6 +8,7 @@ html {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -45,6 +46,7 @@ body {
 .site__title {
   margin: 50px 0 40px;
   font-size: 7.6rem;
+  transition: all 0.5s linear;
 }
 .site__description {
   margin-bottom: 50px;
@@ -63,7 +65,7 @@ body {
   font-size: 1.2rem;
 }
 .buttons__button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .button_showy {
   background-color: #f1b400;
@@ -72,21 +74,28 @@ body {
   margin: 10px;
 }
 
+/* ABOUTセクション */
 .about {
   padding: 80px 30px;
   background-color: #fff;
   color: #333;
 }
-.headding {
+.heading {
   position: relative;
   display: inline-block;
   margin: 30px 0 15px;
   padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
-.headding::before,
-.headding::after {
+.heading:hover {
+  color: salmon;
+  font-size: 4.1rem;
+}
+.heading::before,
+.heading::after {
   content: "";
   position: absolute;
   right: 0;
@@ -94,7 +103,7 @@ body {
   left: 0;
   border-bottom: 1px solid #999;
 }
-.headding::before {
+.heading::before {
   bottom: 5px;
 }
 .about__text {
@@ -102,9 +111,10 @@ body {
   line-height: 2.5;
 }
 
+/* WORKSセクション */
 .works {
   background-color: #383634;
-  padding: 80px 0;
+  padding: 80px 0 200px;
 }
 .works-wrapper {
   display: table;
@@ -124,10 +134,11 @@ body {
   left: 0;
   width: 100%;
   /* 要素が絶対値指定されているときはheightを%指定できる(親要素でheightがpx指定されていてもできる) */
-  height: 60%;
+  height: 100%;
   background: rgba(0, 140, 230, 0.7);
   background-size: 100% 100%;
   opacity: 0.2;
+  -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
 }
 .work-image {
@@ -142,20 +153,23 @@ body {
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 50%;
+  height: 100%;
   overflow-y: auto;
 }
 .work-description__inner {
   display: table;
   width: 100%;
   height: 100%;
-  padding: 16%;
+  padding: 12%;
 }
 .work-description__text {
   display: table-cell;
   vertical-align: middle;
   font-size: 1.2rem;
   line-height: 2;
+}
+.work-description__text b {
+  font-size: 1.5rem;
 }
 .works__button {
   display: inline-block;
@@ -168,6 +182,9 @@ body {
   letter-spacing: 1px;
   font-size: 1.2rem;
 }
+.works__button:hover {
+  opacity: 0.8;
+}
 .work-description__text .works__button {
   width: 60%;
   margin-top: 20%;
@@ -176,4 +193,187 @@ body {
 .button_ghost {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* SEKILLSセクション */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skills-wrapper {
+  display: table;
+  width: 85%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
+}
+.skill__icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.skill__title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+.skill__text {
+  margin: 0 20px;
+  line-height: 2;
+}
+
+/* CONTACTセクション */
+.contact {
+  padding: 80px 0 150px;
+  background-color: #383634;
+}
+.external-page {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.external-page a {
+  display: table-cell;
+}
+.external-page__icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 8rem;
+  line-height: 142px;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.external-page__icon:hover {
+  color: #2f7fff;
+  font-size: 1.5;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .buttons__button:hover,
+  .works__button:hover {
+    opacity: 1;
+  }
+
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site__title-sub {
+    font-size: 1.7rem;
+  }
+  .site__title-sub::before,
+  .site__title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site__title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  /* --- about --- */
+  .about__text {
+    line-height: 1.8;
+  }
+
+  /* --- works --- */
+  .works {
+    padding-bottom: 80px;
+  }
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background: no-repeat;
+    background-size: cover;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .unity::after {
+    background-image: url("../images/unity.png");
+  }
+  .shift::after {
+    background-image: url("../images/shift.png");
+  }
+  .beyond::after {
+    background-image: url("../images/beyond.png");
+  }
+  .todo::after {
+    background-image: url("../images/todo.jpg");
+  }
+
+  /* --- skills --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill__icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill__text {
+    margin: 0;
+  }
+
+  /* --- contact --- */
+  .contact {
+    padding-bottom: 80px;
+  }
+  .external-page {
+    display: block;
+  }
+  .external-page a {
+    display: inline-block;
+    margin: 10px;
+  }
+  .external-page__icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
 }

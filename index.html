@@ -2,11 +2,18 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:700,400"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -27,7 +34,7 @@
         PortPholio
       </p>
 
-      <h1 class="site__title">Hi, MY NAME IS KAZUTO</h1>
+      <h1 class="site__title">Hello World, I'm KAZUTO</h1>
       <p class="site__description">Please know about me.</p>
       <div class="buttons">
         <a href="#about" class="buttons__button">KNOW MORE</a>
@@ -35,19 +42,23 @@
       </div>
     </section>
     <section class="about" id="about">
-      <h2 class="headding">ABOUT ME</h2>
+      <h2 class="heading">ABOUT ME</h2>
       <p class="about__text">
-        はじめまして。大阪の大学に通っているカーーズといいます。<br />
+        はじめまして。大阪の大学に通っている20歳のカーーズといいます。<br />
         中学3年生の頃にアノニマスに憧れて、プログラミングを始めました。<br />
         現在は、大阪の大学で経営学を勉強しながら、IT技術の習得にも勤しんでいます。
       </p>
       <p class="about__text">
         このサイトは、私が今までやってきたことを記録したポートフォリオサイトです。<br />
-        様々な人に私がどのような人物なのかを知って欲しいと思っています。
+        様々な人に私がどのような人物なのかを知って欲しいと思っています。<br />
+      </p>
+      <p class="about__text">
+        大学生のうちに様々な事を経験したいと思っています。<br />
+        自分の夢を叶えるためにも、周りの人を幸せにするためにも勉強を頑張ります。<br />
       </p>
     </section>
     <section class="works">
-      <h2 class="headding">WORKS</h2>
+      <h2 class="heading">WORKS</h2>
       <div class="works-wrapper">
         <div class="work-box unity">
           <img src="images/unity.png" alt="Unityゲーム" class="work-image" />
@@ -55,22 +66,34 @@
             <div class="work-description__inner">
               <p class="work-description__text">
                 <b>3Dゲーム</b><br />
-                5つのステージを走り、タイムを競うゲーム<br />
+                5ステージを走り、タイムを競うゲーム<br />
+                作成年: 2016年 2月<br />
                 使用ツール: Unity, C#<br />
-                <a href="#" class="works__button button_ghost">READ MORE</a>
+                <a
+                  href="https://www.youtube.com/watch?v=43HPEuINvoI&feature=youtu.be"
+                  target="_blank"
+                  class="works__button button_ghost"
+                  >READ MORE</a
+                >
               </p>
             </div>
           </div>
         </div>
-        <div class="work-box shigt">
+        <div class="work-box shift">
           <img src="images/shift.png" alt="シフト管理" class="work-image" />
           <div class="work-description">
             <div class="work-description__inner">
               <p class="work-description__text">
-                <b>シフト管理アプリ</b><br />
-                シフトの確認や出欠勤の連絡が出来るアプリ<br />
+                <b>(社内)シフト管理アプリ</b><br />
+                シフト確認や出欠勤の連絡が出来るアプリ<br />
+                作成年: 2018年 1月<br />
                 使用ツール: Applican, GAS, JS<br />
-                <a href="#" class="works__button button_ghost">READ MORE</a>
+                <a
+                  href="https://docs.google.com/presentation/d/1l5QnIx1n78a4KYgQBIXNsPr3nyoshco703aToEDwad4/edit#slide=id.p4"
+                  target="_blank"
+                  class="works__button button_ghost"
+                  >READ MORE</a
+                >
               </p>
             </div>
           </div>
@@ -81,9 +104,15 @@
             <div class="work-description__inner">
               <p class="work-description__text">
                 <b>拡散型質問投稿アプリ</b><br />
-                最も適している人物に回答を促すアプリ<br />
+                最も適切な人物に回答を促すアプリ<br />
+                作成年: 2018年 7月<br />
                 使用ツール: Expo, PHP, ReactNative<br />
-                <a href="#" class="works__button button_ghost">READ MORE</a>
+                <a
+                  href="https://www.youtube.com/watch?v=OXxGKtcbwf0"
+                  target="_blank"
+                  class="works__button button_ghost"
+                  >READ MORE</a
+                >
               </p>
             </div>
           </div>
@@ -93,18 +122,66 @@
           <div class="work-description">
             <div class="work-description__inner">
               <p class="work-description__text">
-                <b>TwitterToDoサイト</b><br />
+                <b>TwitterToDoサイト(製作中)</b><br />
                 毎日のタスクがtweetされるTodoサイト<br />
+                作成年: 2019年 4月<br />
                 使用ツール: Heroku, firebase, React<br />
-                <a href="#" class="works__button button_ghost">READ MORE</a>
+                <span class="works__button button_ghost">COMING SOON...</span>
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="skills"></section>
-    <section class="contact" id="contact"></section>
-    <section class="footer"></section>
+    <section class="skills">
+      <h2 class="heading">MY SKILLS</h2>
+      <div class="skills-wrapper">
+        <div class="skill-box">
+          <i class="skill__icon fas fa-tasks"></i>
+          <div class="skill__title">MANAGEMENT</div>
+          <p class="skill__text">
+            プロジェクトやチームの管理が得意です。<br />
+            問題発見、細分化をしてスケジュールに落とします。<br />
+            数百万円規模のプロジェクトリーダーもしました。
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="skill__icon fas fa-running"></i>
+          <div class="skill__title">CHALLENGING</div>
+          <p class="skill__text">
+            面白いと思ったことには迷いなく挑戦します。<br />
+            インターン, ヒッチハイク, CanYouMakeIt!?など<br />
+            挑戦が人生を楽しくすると思っています。
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="skill__icon fas fa-laptop-code"></i>
+          <div class="skill__title">PROGRAMMING</div>
+          <p class="skill__text">
+            アルゴリズム, PHPでのバックエンドが得意です。<br />
+            これからはフロントの技術を磨いていきます。<br />
+            ユーザー目線に立ってUI/UXを考え提供します。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">CONTACT</h2>
+      <article class="external-page">
+        <a class href="https://twitter.com/k_zt0215" target="_blank"
+          ><i class="external-page__icon fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/kazuto0215" target="_blank"
+          ><i class="external-page__icon fab fa-facebook"></i
+        ></a>
+        <a href="https://github.com/sudokzt" target="_blank"
+          ><i class="external-page__icon fab fa-github"></i
+        ></a>
+        <a href="mailto:kaaazu0215@gmail.com" target="_blank"
+          ><i class="external-page__icon fas fa-envelope"></i
+        ></a>
+      </article>
+    </section>
+    <section class="footer">@ 2019 sudokzt</section>
   </body>
 </html>

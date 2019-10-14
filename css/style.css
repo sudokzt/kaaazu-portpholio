@@ -23,7 +23,7 @@ body {
 .past-portpholio {
   text-align: left;
   padding: 10px;
-  font-size: 1.8rem;
+  font-size: rem;
 }
 .past-portpholio a {
   text-decoration: none;
